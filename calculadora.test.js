@@ -30,9 +30,16 @@ test("Deve multiplicar dois números corretamente", function() {
      expect(resultado).toBe(100);
    });
 
-test("Deve dividir dois números corretamente", function() {
-     const numeroUm = 100;
-     const numeroDois = 10;
+
+
+/*Faça uma divisao que 
+recebe dois numeros como parametro 
+retorna o resultado da div desses dois numeros
+Retorna o numero -101 caso o segundo numero seja 0 */
+
+test("Deve dividir dois números corretamente e retornar -101 quando o segundo número for 0", function() {
+     const numeroUm = 20;
+     const numeroDois = 0;
      const resultado = dividirDoisNumeros(numeroUm, numeroDois);
-     expect(resultado).toBe(10);
-   });
+     expect(resultado).toBe(-101);
+ });
